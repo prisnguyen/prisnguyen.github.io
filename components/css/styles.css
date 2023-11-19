@@ -1,0 +1,92 @@
+/* Reset some default styles for better cross-browser consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li, li2 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255); /* Google Blue */
+    color: #fff;
+    padding: 20px;
+}
+header h1,
+header h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+header h1 {
+    list-style-type: none;
+}
+
+header h1 li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header h2 {
+    list-style-type: none;
+}
+
+header h2 li2 {
+    display: inline;
+    margin-left: 15px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1;
+    background-color: #f5f5f5;
+    color: #333;
+
+}
+
+nav {
+    background-image: url('../img/nav-pic.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 200px; /* Adjust padding as needed */
+    text-align: center;
+    
+}
+
+nav img {
+    max-height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+nav h1,
+nav h2 {
+    margin: 0;
+    text-align: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
