@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <video id="video-background" autoplay muted loop>
+        <source src="./components/img/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <header>
         <h1>
             <li><a href="https:/prisnguyen.github.io">Priscilla Nguyen</a></li>
@@ -22,35 +27,19 @@
     </header>
 
     <nav class="center">
-        <h1>Hi, I'm Priscilla</h1>
+        <h1 id="welcome-text">Hi, I'm Priscilla</h1>
         <h2>Welcome to my website!</h2>
+        <div id="introduction">
+            <p id="intro-line1"></p>
+        </div>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
-    </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Add your portfolio items here -->
-    </section>
-
-    <section id="blog">
-        <h2>Blog</h2>
-        <!-- Add your blog posts or links to your blog posts here -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <!-- Add a contact form or your contact information here -->
-    </section>
-
-    <footer>
+    <!-- <footer>
         <p>&copy; 2023 All rights reserved.</p>
-    </footer>
+    </footer> -->
 
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="./components/js/script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 
 </html>
