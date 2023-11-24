@@ -28,7 +28,7 @@ body {
   font-size: 25px;
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   margin-left: 35px;
   transition: .3s;
   opacity: 0;
@@ -59,14 +59,20 @@ body {
   font-weight: 500;
   margin-left: 35px;
   border: 1px solid transparent;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: .3s;
   opacity: 0;
   animation: slideTop .5s ease forwards;
   animation-delay: calc(.2s * var(--i));
 }
 
-
+@media (max-width: 600px) {
+  a {
+    display: block;
+    width: 100%; /* Make each tile take the full width */
+    margin-bottom: 10px; /* Adjust the margin between tiles */
+  }
+}
 @keyframes slideTop {
   0% {
     transform: translateY(-100px);
