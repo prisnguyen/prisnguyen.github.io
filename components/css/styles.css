@@ -58,6 +58,8 @@ body {
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
+  border: 1px solid transparent;
+  border-radius: 5px;
   transition: .3s;
   opacity: 0;
   animation: slideTop .5s ease forwards;
@@ -78,8 +80,27 @@ body {
 
 .navbar a:hover {
   color: #6e85ea;
-
+  text-decoration: none;
+  border: 1px solid #6e85ea;
 }
+
+/* .navbar a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; 
+  bottom: 0;
+  left: 0;
+  background-color: #000; 
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
 
 .home {
   position: relative;
