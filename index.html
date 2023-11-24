@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="./components/css/styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <title>Priscilla Nguyen</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Priscilla</a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priscilla Nguyen</title>
-    <link rel="stylesheet" href="./components/css/styles.css"> <!-- Link to your CSS file -->
-</head>
+            <nav class="navbar">
+                <a href="#" style="--i:1" class="active">About Me</a>
+                <a href="#" style="--i:2">Skills</a>
+                <a href="#" style="--i:3">Resume/CV</a>
+                <a href="#" style="--i:4">Writing</a>
+                <a href="#" style="--i:5">Contact</a>
+            </nav>
+        </header>
 
-<body>
-    <video id="video-background" autoplay muted loop>
-        <source src="./components/img/background.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <header>
-        <h1>
-            <li><a href="https:/prisnguyen.github.io">Priscilla Nguyen</a></li>
-        </h1>
-        <h2>
-            <li2><a href="#about">About Me</a></li2>
-            <li2><a href="#project">Projects</a></li2>
-            <li2><a href="#writing">Writing</a></li2>
-            <li2><a href="#contact">Resume/CV</a></li2>
-        </h2>
-    </header>
-
-    <nav class="center">
-        <h1 id="welcome-text">Hi, I'm Priscilla</h1>
-        <h2>Welcome to my website!</h2>
-        <div id="introduction">
-            <p id="intro-line1"></p>
-        </div>
-    </nav>
-
-
-    <!-- <footer>
-        <p>&copy; 2023 All rights reserved.</p>
-    </footer> -->
-
-    <script src="./components/js/script.js"></script> <!-- Link to your JavaScript file -->
-</body>
-
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello, I'm Priscilla</h3>
+                <h3>Welcome to my website!</h3>
+                <h3>And I'm a <span class="text"></span></h3>
+                <div class="home-sci">
+                    <a href="#" style="--i:6">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a>
+                    <a href="#" style="--i:7">
+                        <i class='bx bxl-linkedin-square' ></i>
+                    </a>
+                    <a href="#" style="--i:8">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                    <a href="#" style="--i:8">
+                        <i class='bx bxl-twitter' ></i></i>
+                    </a>
+                </div>
+                <a href="#" class="btn-box">More about me</a>
+            </div>
+        </section>
+        <script src="./components/js/script.js"></script>
+    </body>
 </html>
+    
