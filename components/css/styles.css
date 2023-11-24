@@ -6,8 +6,15 @@
   font-family: 'poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
 body {
   color: #ededed;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .header {
@@ -56,7 +63,7 @@ body {
   font-size: 25px;
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   margin-left: 35px;
   border: 1px solid transparent;
   border-radius: 10px;
@@ -223,4 +230,30 @@ body {
   box-shadow: 0 0 5px #DA70D6,
   0 0 25px #DA70D6, 0 0 50px #DA70D6,
   0 0 100px #DA70D6, 0 0 200px #DA70D6
+}
+
+.image-container {
+  width: 40%;
+  overflow: hidden; 
+  position: relative;
+}
+
+.image-container img {
+  width: 100%; 
+  display: block; 
+  animation: moveUpDown 2s linear infinite; 
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+      transform: translateY(0); 
+  }
+  50% {
+      transform: translateY(20px); 
+  }
+}
+
+.text-content {
+  max-width: 50%; 
+  margin: auto; 
 }
