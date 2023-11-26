@@ -1,0 +1,9 @@
+Hello, my name is <strong>Priscilla Nguyen</strong>. I graduated from Malden High School in 2020 and currently live in Boston. I'm currently a senior major in <strong>Computer Science & Economics</strong> from <strong>Boston University</strong>, expecting to graduate in May 2024. I've also attained the Credential of Readiness by Harvard Business School Online for coursework in Financial Accounting, Business Analytics, and Economics for Managers. 
+
+I began my journey in Computer Science during my second semester in college in 2021. I have a passion for developing software and apps that can be useful for young generations. I am proficient in various programming languages, including <strong>Java, Python, C, Bash, and Stata</strong>, across multiple platforms. I also have a keen interest in delving into scientific research, particularly in fields such as chemistry and biology. Feel free to explore the <strong>"Projects"</strong> and <strong>"Writing"</strong> tabs at the top of the page to see some of my creations and research.
+
+In November 2022, I had a honor of achieving the <strong>first prize</strong> at BostonHacks, a hackathon organized by BU. I accomplished this feat alongside a team of 4, outshining more than 200 participants. Our product can help people monitor how our mood varies and better understand triggers that can cause the negative emotions they experience.
+
+I'm a risk-loving, goal-oriented programmer passionate about problem-solving. I value collaboration, flexibility, and creativity, thriving in diverse and self-motivated environments. Let's connect for collaboration or a chat. Follow my social media links or <a href="mailto:pmnguyn@gmail.com">drop me an email</a>.
+
+I am actively seeking entry-level opportunities in Software Engineering or Data Science! Contact me if you believe I could be a good fit for your team.

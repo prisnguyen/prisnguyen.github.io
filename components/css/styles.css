@@ -19,15 +19,15 @@ body {
 
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 10%;
+  height: 10%; 
+  padding: 30px 100px;
+  width: 99%;
+  height: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   z-index: 100;
+  background-color: #000000;
 }
 
 .logo {
