@@ -64,7 +64,7 @@ header {
   color: #fff;
   text-decoration: none;
   padding: 6px 15px;
-  font-weight: normal;
+  font-weight: 100;
   border: 1px solid transparent;
   border-radius: 20px;
   margin: 0 10px;
@@ -116,7 +116,7 @@ header {
 .home-content h3 {
   margin-bottom: 20px;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 50;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
   animation-delay: .7s;
