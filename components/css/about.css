@@ -12,6 +12,7 @@ body {
   color: #ededed;
   overflow-x: hidden;
   min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -55,6 +56,7 @@ header {
 }
 
 .navbar a {
+  font-family: 'Poppins', sans-serif;
   font-size: 25px;
   color: #fff;
   text-decoration: none;
@@ -109,6 +111,7 @@ header {
 }
 
 .home-content h3 {
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 50;
@@ -141,6 +144,7 @@ header {
 }
 
 .home-content h1 {
+  font-family: 'Poppins', sans-serif;
   font-size: 34px;
   font-weight: 700;
   margin: -3px 0;
