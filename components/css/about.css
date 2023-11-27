@@ -105,8 +105,8 @@ header {
 .home-content {
   position: relative;
   text-align: left;
-  width: 550px;
-  margin-top: 600px;
+  width: 570px;
+  margin-top: 550px;
   margin-bottom: 50px;
 }
 
@@ -146,7 +146,7 @@ header {
 .home-content h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 600;
   margin: -3px 0;
   opacity: 0;
   animation: slideRight 1s ease forwards;
