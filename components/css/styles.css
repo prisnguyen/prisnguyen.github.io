@@ -31,6 +31,7 @@ header {
   align-items: center;
   z-index: 100;
   background-color: #000000;
+  font-family: 'Poppins', sans-serif;
 }
 
 .logo {
@@ -44,6 +45,7 @@ header {
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: .5s;
+  font-family: 'Poppins', sans-serif;
 }
 
 @keyframes slideRight {
