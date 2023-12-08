@@ -16,7 +16,7 @@
         <title>About Me</title>
     </head>
     <body>
-        <header>
+        <header class="sticky">
             <a href="https://prisnguyen.github.io/" class="logo">Priscilla</a>
 
             <nav class="navbar">
@@ -31,7 +31,7 @@
                           <!-- <li class="option">Option 2</li>
                           <li class="option">Option 3</li> -->
                         </ul>
-                      </div>
+                    </div>
                 </a>
                 <a href="./contact.html" style="--i:5">Contact</a>
             </nav>
@@ -79,7 +79,12 @@
                 </h1>
             </div>
         </section>
-        <script src="../js/scroll.js" defer></script>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", windown.scrollY > 0)
+            })
+        </script>
     </body>
 </html>
     
