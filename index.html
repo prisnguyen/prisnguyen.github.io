@@ -1,66 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="./components/css/styles.css">
-        <meta charset="utf-8">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
-        <title>Priscilla Nguyen</title>
-    </head>
-    <body>
-        <header class="header">
-            <a href="https://prisnguyen.github.io/" class="logo">Priscilla</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priscilla Nguyen</title>
+    <link rel="stylesheet" href="./components/css/styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-            <nav class="navbar">
-                <a href="./components/html/about.html" style="--i:1" class="active">About Me</a>
-                <a href="#" style="--i:2">Projects</a>
-                <a href="#" style="--i:3">Resume/CV</a>
-                <a href="./components/writing/Bacteriological Examination of Water.pdf" style="--i:4" class="arrow">
-                    Writing
-                    <div class="options-container">
-                        <ul>
-                            <li class="option">Water Lab</li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="./components/html/contact.html" style="--i:5">Contact</a>
-            </nav>
-        </header>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Home</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Priscilla</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#writing" onclick="toggleMenu()">Writing</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./components/img/avatar.png" alt="avatar"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Priscilla</h1>
+        <p class="section__text__p2">I am <span class="text"></span></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./resume/P_RESUME.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./components/img/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/priscilla-nguyen-6000391b5/'"
+          />
+          <img
+            src="./components/img/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/prisnguyen'"
+          />
+          <img
+            src="./components/img/twitter.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://twitter.com/pmnguyn'"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="./components/js/typed.js"></script>
 
-        <section class="home">
-            <div class="home-content">
-                <h3>Hello, I'm Priscilla</h3>
-                <h3>Welcome to my website!</h3>
-                <h3>I am <span class="text"></span></h3>
-                <div class="home-sci">
-                    <a href="https://www.facebook.com/profile.php?id=100009467540390" style="--i:6">
-                        <i class='bx bxl-facebook-circle'></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/priscilla-nguyen-6000391b5/" style="--i:7">
-                        <i class='bx bxl-linkedin-square'></i>
-                    </a>
-                    <a href="https://github.com/prisnguyen" style="--i:8">
-                        <i class='bx bxl-github' ></i>
-                    </a>
-                    <a href="https://twitter.com/pmnguyn" style="--i:8">
-                        <i class='bx bxl-twitter' ></i></i>
-                    </a>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./components/img/Rocket.svg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./components/img/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Full-Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./components/img/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BA in Computer Science<br />& Economics</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello, my name is <strong>Priscilla Nguyen</strong>. 
+              I'm currently a senior major in <strong>Computer Science & Economics</strong> at <strong>Boston University</strong>, expecting to graduate in May 2024.
+              I've also attained the Credential of Readiness by Harvard Business School Online for coursework
+              in Financial Accounting, Business Analytics, and Economics for Managers. 
+            </p>
+            <h4>I am actively seeking entry-level opportunities in Software Engineering or Data Science! 
+              Contact me if you believe I could be a good fit for your team.
+            </h4>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./components/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./index.html#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./components/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
                 </div>
-                <a href="./components/html/about.html" class="btn-box">More about me</a>
+              </article>
+              <article>
+                <img
+                  src="./components/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./components/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./components/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./components/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./components/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
-            <div class="image-container">
-                <img src="./components/img/header-img.svg" alt="Description of the image">
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./components/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./components/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./components/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./components/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
-            
-        </section>
-        <script src="./components/js/script.js"></script>
-    </body>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./components/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./index.html#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./components/img/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./components/img/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./components/img/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./components/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./index.html#writing'"
+      />
+    </section>
+    <section id="writing">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Writing & Research</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./components/img/biology.png"
+                alt="Writing 1"
+                class="writing-img"
+              />
+            </div>
+            <h2 class="experience-sub-title writing-title">Bacteriological Examination of Water</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 writing-btn"
+                onclick="window.open('./writing/Bacteriological-Examination-of-Water.pdf')"
+              >
+                Read
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./components/img/data-science.png"
+                alt="Project 2"
+                class="writing-img"
+              />
+            </div>
+            <h2 class="experience-sub-title writing-title">City of Boston: City Budget</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 writing-btn"
+                onclick="window.open('./writing/City-Budget.pdf')"
+              >
+                Read
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./components/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./index.html#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./components/img/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:pmnguyn@gmail.com">pmnguyn@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./components/img/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/priscilla-nguyen-6000391b5/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#writing">Writing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="./components/js/script.js"></script>
+  </body>
 </html>
-    
