@@ -164,7 +164,8 @@ section {
 
 #profile {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
   height: 80vh;
 }
 
@@ -179,7 +180,6 @@ section {
   align-self: center;
   text-align: center;
   width: 400px;
-  margin-right: 100px;
 }
 
 .section__text p {
