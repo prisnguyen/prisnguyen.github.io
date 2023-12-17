@@ -179,7 +179,7 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
-  width: 400px;
+  width: 100%;
 }
 
 .section__text p {
